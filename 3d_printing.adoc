@@ -12,26 +12,26 @@
 
 After finishing drawing the 3D model, you will need to export it as a file. Use `stl` as the format.
 
+.Export screen in Fusion. Make sure to select .stl for exporting.
+image::fusion_export.png[Fusion Export Screen, 300, 200]
+
+
 === Importing to Creality Software
 
 . https://www.creality.com/download#sparkx[Download the software] if you have not.
-
-+
-.Export screen in Fusion. Make sure to select .stl for exporting.
-image::fusion_export.png[]
 
 . Import the `.stl` file into the Creality app by pressing the *Add* button.
 
 +
 .The "Add" button
-image::import_btn.png[]
+image::import_btn.png[Add Button, 300, 200]
 
 +
 The model is imported onto the plate, but the orientation may not be correct.
 
 +
 .An example of a poor rotation. This would use an excessive amount of support.
-image::poor_orientation.png[]
+image::poor_orientation.png[Poor Orientation Example, 300, 200]
 
 +
 [WARNING]
@@ -39,7 +39,7 @@ image::poor_orientation.png[]
 ====
 A person tried printing out a object without using a proper orientation. The model was placed in a diagonal orientation pointing upward. As a result, the angle make the filament couldn't stick properly to the previous layer and printed in air.
 
-image::tc_poor_orient.jpeg[]
+image::tc_poor_orient.jpeg[Poor Orientation Example, 300, 200]
 ====
 
 . Fix the *rotation* using the *Rotate* feature. It will bring up a pop-up where you can modify the angles by the axis shown by the colored lines.
@@ -58,6 +58,7 @@ image::rot_ui.png[UI of Rotate, 400, 100]
 
 . Fix the location by dragging the model back onto the plate.
 
++
 [.float-group]
 --
 [.left]
@@ -69,5 +70,6 @@ image::obj_out_of_bounds.png[Object Out of Bounds, 200, 300]
 image::obj_correct.png[Correctly Placed Object, 200, 300]
 --
 
++
 NOTE: Sometimes, if the model is too large, it will never fit on the plate, and you need to redesign it.
 
