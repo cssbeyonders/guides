@@ -10,7 +10,7 @@
 
 === Exporting
 
-After finishing drawing the 3D model, you will need to export it as a file. Use `stl` as the format.
+After finishing drawing the 3D model, you will need to export it as a file. Use `.stl` as the format.
 
 .Export screen in Fusion. Make sure to select .stl for exporting.
 image::fusion_export.png[Fusion Export Screen, 300, 200]
@@ -35,7 +35,6 @@ image::poor_orientation.png[Poor Orientation Example, 300, 200]
 
 +
 [WARNING]
-.Importance of Orientation
 ====
 A person tried printing out a object without using a proper orientation. The model was placed in a diagonal orientation pointing upward. As a result, the angle make the filament couldn't stick properly to the previous layer and printed in air.
 
@@ -56,7 +55,7 @@ image::rotate_auto_rot.png[Rotate and Auto Orient Buttons, 400, 100]
 .The interface of the "Rotate" function
 image::rot_ui.png[UI of Rotate, 400, 100]
 
-. Fix the location by dragging the model back onto the plate.
+. Fix the *location* by *dragging* the model back onto the plate.
 
 +
 [.float-group]
@@ -73,3 +72,57 @@ image::obj_correct.png[Correctly Placed Object, 200, 300]
 +
 NOTE: Sometimes, if the model is too large, it will never fit on the plate, and you need to redesign it.
 
+=== Nozzle and Printer Selection
+
+You can change the nozzle size and printer in the top left corner.
+
+NOTE: The nozzle size is the diameter of the extruded filament. A smaller number results in a finer object printed.
+
+TIP: It is found out that a smaller nozzle size can also reduce the weight due to reduced wall thickness. Therefore, 0.4 nozzle is better for most situations.
+
+.Selecting printer and nozzle size.
+image::printer_nozzle.png[Printer and Nozzle Selection, 300, 200]
+
+. If the list does not have the nozzle and printer you want:
+.. Click the *Select/Remove printers*.
+.. Check the printers you want to add
+.. Click the *+* button for nozzle.
+.. Finally, click *Confirm* to save the changes.
+
++
+.The printer list.
+image::printer_nozzle_add.png[Printer List, 300, 200]
+
+[TIP]
+====
+- You can also view the size limit of the printers in the  printer list.
+- After selecting a printer and nozzle, the plate will change according to the printer model.
+- You might want to reposition your model when the plate changes.
+====
+
+. Select the printer and nozzle size that you want to use from the list.
+
+=== Slicing and Printing
+
+. If your model has hanging parts, you need to enable support first. On the sidebar, click *Support* > *Enable Support*.
+
++
+.The location of the button of the “Support” tab.
+image::enable_support.png[Enable Support, 200, 300]
+
++
+[WARNING]
+====
+A person forgot to use support for a model with hanging parts. As a result, the hanging part could not print properly.
+
+image::tc_no_support.jpeg[Consequences of Forgoting to Use Support, 300, 200]
+====
+
+. Click *Slice Plate*, then *Send Print*. These buttons are at the bottom right of the canvas.
+
++
+CAUTION: You must slice it first before printing.
+
++
+.Slice Plate” and “Send Print” buttons.
+image::slice_print_btn.png[Slice Plate and Send Print buttons, 300, 200]
