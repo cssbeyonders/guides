@@ -127,7 +127,7 @@ image::printer_nozzle_add.png[Printer List, 300, 200]
 
 You can change or add filament type using the *Filament* window on the top right corner.
 
-CAUTION: You cannot set up filament type, multicolor, or printing temperature on the printer; *you must set it up in the software.*
+IMPORTANT: You cannot set up filament type, multicolor, or printing temperature on the printer; *you must set it up in the software.*
 
 .The filament window.
 image::multifilament.png[Filament Window, 600, 400]
@@ -137,7 +137,7 @@ image::multifilament.png[Filament Window, 600, 400]
 . Change the filament's represented color by pressing the *number* and selecting a color.
 
 +
-CAUTION: Changing the color here has nothing to do with the actual printed color. It is only the represented color in the software.
+IMPORTANT: Changing the color here has nothing to do with the actual printed color. It is only the represented color in the software.
 
 . Next, use the *Color painting* tool to color your model.
 
@@ -156,9 +156,9 @@ image::paint_popup.png[Color Painting UI, 200, 300]
 image::prime_tower.png[Prime Tower, 300, 200]
 
 +
-However, our printer is terrible. It only supports 1 filament. Filling the surfaces has no effect on the actual color printed. Therefore, we need to <<adding-pauses, add a pause>> during the print and change the filament during the pause.
+However, our printer only supports 1 filament at the same time. Filling the surfaces has no effect on the actual color printed. Therefore, we need to <<adding-pauses, add a pause>> during the print and change the filament during the pause.
 
-CAUTION: <<slicing, Slice>> the place first before adding a pause.
+IMPORTANT: <<slicing, Slice>> the place first before adding a pause.
 
 NOTE: Filling the color makes it easier to identify parts.
 
@@ -182,7 +182,7 @@ image::tc_no_support.jpeg[Consequences of Forgoting to Use Support, 300, 200]
 . Click *Slice Plate* (at the bottom right of the canvas).
 
 +
-CAUTION: You must slice it first before printing.
+IMPORTANT: You must slice it first before printing.
 
 +
 ."Slice Plate" and "Send Print" buttons.
@@ -242,7 +242,7 @@ NOTE: Alternatively, you may send the file to the printer and start the printing
 image::send_print.png[Printing Screen, 600, 400]
 
 +
-CAUTION: Make sure that the printer selected in this step is the same as the printer when you select the nozzle. Otherwise, the printer may not print correctly or throw errors.
+IMPORTANT: Make sure that the printer selected in this step is the same as the printer when you select the nozzle. Otherwise, the printer may not print correctly or throw errors.
 
 [WARNING]
 ====
@@ -260,11 +260,63 @@ image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 300, 200]
 [#filament-types]
 === Filament Types
 
+There are a few types of filaments. The most common ones are *PLA* and *ABS*. They are used for different purposes.
+
 [#changing-filament]
 === Changing Filament
 
+. Go to *Control* > *Extrude/Retract* > *Retract*.
+
+. Unlock the lock.
+
+. Hold down the white part and pull the tube out.
+
+. From the rack, pull the filament. While pulling, check if the filament on the nozzle side also gets pulled along.
+
++
+If not, that means there are broken segments of filament within the tube. Push the filament instead of pulling. The segments should drop out from the nozzle side. After every segment drop, pull again to check if there are any remaining segments.
+
+. Pull the filament all the way out and take away the filament roll.
+
+. Place a new filament roll onto the rack and insert it into the tube.
+
++
+IMPORTANT: Make sure that the filament and the tube goes through the hole on the rack.
+
+. After it has reached the nozzle side, use a pair of pliers to cut the end such that it is tipped
+
++
+TIP: This can make it easier to reach the bottom of the nozzle.
+
+. Hold down the white part. Insert *only the filament* into the nozzle and to the very bottom.
+
+. Go to *Control* > *Extrude/Retract* > *Extrude*. While extruding, push down the filament at the nozzle.
+
+. If the extrusion is successful, hold down the white part and insert the tube.
+
+. *Lock the lock.*
+
++
+IMPORTANT: Locking the lock is very important. Otherwise, the nozzle will not be intaking.
+
 [#starting-a-print]
 === Starting a Print
+
+. Before doing anything, clean the board:
+- Any remaining parts of the previous print
+- Nozzle cleaning wastes
+- Initial line
+
++
+.Locations to Check for Cleaning the Plate.
+image::plate_cleaning.png[Plate Cleaning Locations, 300, 200]
+
+. Go to *Control* > *Extrude/Retract* > *Extrude* and test if the filament can extrude well. If not, <<could-not-print-out-filament, fix the problem with these steps>>.
+
+. If you have loaded the file to the printer, go to *File* > select your model. Check if the filament type matches the filament type inserted. If yes, click *Print*.
+
++
+If you have not loaded the file to the printer, <<connection-and-printing, follow these steps>>. Make sure that the selected filament type in the software matches the filament inserted.
 
 [#taking-out-the-product]
 === Taking Out the Product
@@ -333,6 +385,10 @@ There are many reasons this could happen.
 |Push down the filament to the *very* bottom.
 |There are multiple "layers" within the nozzle. What you thought was the bottom may not be the real bottom.
 
+|Filament ran out.
+|<<changing-filament, Change filament.>>
+|
+
 |Broken pieces of filament in tube.
 |<<changing-filament, Remove broken pieces.>>
 |
@@ -367,6 +423,8 @@ There are many reasons this could happen.
 - <<slicing, Did you enable support for hanging parts?>>
 - The printer may not have consistent filament supply. See <<could-not-print-out-filament, this section>> to fix filament supply.
 
+- You accidentally moved the plate while replacing filament.
+
 [#axis-out-of-range]
 === Axis Out of Range
 
@@ -396,4 +454,6 @@ Nozzle:: The apparatus in a 3D printer which intakes filament, heats it up, and 
 Plate:: The board in a 3D printer where 3D printing is done on.
 Rack:: The place where filament rolls are stored.
 Screen:: The display on the 3D printer.
+Slice:: The action of turning a 3D model into layers for the 3D printer to print.
 Support:: Extra printed filament for avoid hanging parts being printed in the air.
+Tube:: The white plastic flexible cylinder connecting the rack and the nozzle of the printer to guide filament
