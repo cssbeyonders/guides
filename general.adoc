@@ -1,0 +1,100 @@
+= General Guide
+Hayden
+:sectnums:
+:toc:
+
+:imagesdir: images/general/s1
+== Common Components and Names
+
+=== Tetrix
+
+=== Matrix
+
+=== GoBilda
+
+=== Tools
+
+:imagesdir: images/general/s2
+== Skills
+
+=== Problem Solving Skills
+- 70-90% of computer problems can be solved by switching it off then on again.
+- If you encounter any problems, the Internet is a better helper than the elder teammates.
+
+=== Using Screws
+
+=== Using Mac
+
+- The command (`Cmd`) key is like the control key on Windows.
+
++
+.Keys on Mac.
+[%autowidth]
+|===
+|Windows |Mac
+
+|`Ctrl + C` |`Cmd + C`
+|`Ctrl + V` |`Cmd + V`
+|===
+
++
+[NOTE]
+There is also the control key, but its use is different from that on Windows.
+
+- Change keyboard using the globe key.
+
+=== Using Driver Station
+
+:imagesdir: images/general/s3
+== Motor and Movement
+
+=== Mounting Motors and Components
+
+Motors are mounted using *Motor Mounts*. There are different types of motor mounts for different types of motors.
+
+=== Using Servos
+
+Servos are also mounted using *Servo Mounts*.
+
+=== Mecanum Wheel
+
+Mecanum wheels should be mounted according to the figure below.
+
+.Mounting method of mecanum wheel on car base.
+image::mecanum_installation.jpeg[Mecanum Wheel Mounting Method, 400, 400]
+
+[TIP]
+You can easily remember its orientation by remembering the "X", the green and blue lines. The "slants" on the wheel align to it.
+
+=== Slider
+
+:imagesdir: images/general/s4
+== Wiring
+
+=== Naming Conventions
+
+During a period of time, a kind of systematic naming convension was created. It follows the format `[end 1 color] 接 [end 2 color] [wire color]`.
+
+However, there are also trivial names for them. The following table lists the wire names.
+
+.Wire Names
+[%autowidth]
+[cols="1,1,1,a"]
+|===
+|Trivial Name (English) |Trivial Name (Chinese) |Systematic Name |Image
+
+|Battery Wire |電池線 |黃接白黑紅 |image::mecanum_installation.jpeg[Mecanum Wheel Mounting Method, 400, 400]
+|Servo Wire |Servo線 |白接白黑紅白/黑紅黃 |
+|Signal Wire |信號線 | |
+|Motor Wire |摩打線 | |
+|===
+
+=== Connecting to Battery
+
+Connect the battery to the *Control Hub* using the *Battery Wire*.
+
+=== Connecting Control Hub and Expansion Hub
+
+=== Connecting to Motors
+
+=== Connecting to Servos

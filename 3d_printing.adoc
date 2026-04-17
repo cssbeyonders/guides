@@ -249,20 +249,103 @@ CAUTION: Make sure that the printer selected in this step is the same as the pri
 ====
 A person sent the model which had its printer set to a larger one to a smaller one. As the model was compiled with coordinates for larger sizes, the nozzle went out of range in the smaller printer, resulting in a failed printing job.
 
-image::print_cutoff[Failed Printing due to Out of Range Axis, 300, 200]
+image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 300, 200]
 ====
 
 === Remote Control and Recording
 
+:imagesdir: images/3d_printing/s3
+[#operating-the-printer]
 == Operating the Printer
+
+[#filament-types]
 === Filament Types
+
+[#changing-filament]
 === Changing Filament
+
+[#starting-a-print]
 === Starting a Print
+
+[#taking-out-the-product]
 === Taking Out the Product
 
+:imagesdir: images/3d_printing/s4
+[#troubleshooting]
 == Troubleshooting
+
+[#filament-ran-out]
 === Filament Ran Out
+
+. There should be a pop-up on the screen. Click *Refill*.
+. Follow <<changing-filament, the steps to change filament>>, *including the extrude test.*
+. On the screen, *resume printing*.
+
+[#could-not-print-out-filament]
 === Could not Print Out Filament
+
+The primary reason is that the supply of filament was interrupted but the printer could not detect the running out/blocking of filament supply.
+
+There are many reasons this could happen. 
+
+.Causes for Interruption of Filament Supply
+[cols="a,a,a"]
+|===
+|Possible Causes |Solutions |Remarks
+
+|Lock is locked.
+|Unlock the lock.
+|
+
+|Filament not fully inserted.
+|Push down the filament to the *very* bottom.
+|There are multiple "layers" within the nozzle. What you thought was the bottom may not be the real bottom.
+
+|Broken pieces of filament in tube.
+|<<changing-filament, Remove broken pieces.>>
+|
+[disc]
+- If the filament is easy to break, and there are tight turns in the tube, it is easy for this to happen.
+- Filament that are not stored in proper environment is easier to break.
+
+|There are filaments of other types stuck in the nozzle.
+|
+. On the screen, go to *Control* > *Extrude/Retract*.
+. Configure it to a high temperature (like 260ºC).
+. Press *Extrude*.
+. While it is extruding, push down new filament into the nozzle.
+. Take note of the extruded filament. If there are filament of other colors, repeat extruding until it is fully gone.
+|This is because filaments like ABS require a higher temperature to melt. When we extrude using a higher temperature, it can melt the stuck filament.
+
+|The filament tied in the filament wheel.
+|Untie/cut the filament.
+|
+
+|The temperature is not suitable for the filament in use.
+|Go back to the software and <<multicolor-and-filament-selection, configure the filament to be correct>>.
+|
+
+|===
+
+[#printer-printed-a-mess]
 === Printer Printed a Mess
+
+[disc]
+- <<importing-to-creality-software--rotate, Did you orient your model properly?>>
+- <<slicing, Did you enable support for hanging parts?>>
+- The printer may not have consistent filament supply. See <<could-not-print-out-filament, this section>> to fix filament supply.
+
+[#axis-out-of-range]
 === Axis Out of Range
+
+.Axis Out of Range Error.
+image::axis_out_of_range.jpeg[Axis Out of Range, 300, 200]
+
+[disc]
+- <<importing-to-creality-software--rotate, Did you place your model within the boundary of the plate?>> This includes vertical limit.
+- <<nozzle-and-printer-selection, Did you select the matching printer?>>
+- <<connection-and-printing, Did you select the matching printer for your selected nozzle?>>
+
 === Printing in the Air
+
+Filament supply was interrupted during the print. See <<could-not-print-out-filament, this section>> to fix filament supply.
