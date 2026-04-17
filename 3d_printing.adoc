@@ -1,9 +1,20 @@
 = 3D Printing Guide
+Hayden; Jeff
 :sectnums:
 :toc:
 
 :imagesdir: images/3d_printing/s1
 == Using Fusion
+
+=== Placeholder 1
+
+=== Placeholder 2
+
+=== Placeholder 3
+
+=== Placeholder 4
+
+=== Placeholder 5
 
 :imagesdir: images/3d_printing/s2
 == Printing Software
@@ -102,12 +113,51 @@ image::printer_nozzle_add.png[Printer List, 300, 200]
 
 . Select the printer and nozzle size that you want to use from the list.
 
-=== Slicing and Printing
+=== Multicolor and Filament Selection
+
+You can change or add filament type using the *Filament* window on the top right corner.
+
+CAUTION: You cannot set up filament type, multicolor, or printing temperature on the printer; you must set it up in the software.
+
+.The filament window.
+image::multifilament.png[Filament Window, 300, 200]
+
+. Add a new filament by pressing *+*.
+. Modify the filament's type by pressing the *down arrow* next to the type.
+. Change the filament's represented color by pressing the *number* and selecting a color.
+
++
+CAUTION: Changing the color here has nothing to do with the actual printed color. It is only the represented color in the software.
+
+. Next, use the *Color painting* tool to color your model.
+
++
+.The location of the "Color Painting" tool on the toolbar.
+image::fill_tool.png[Color Painting Tool, 400, 100]
+
++
+.The UI of the "Color Painting" tool.
+image::paint_popup.png[Color Painting UI, 200, 300]
+
+. After filling multiple colors, a prime tower is needed. Make sure your model does not collide with the prime tower.
+
++
+.Prime Tower.
+image::prime_tower.png[Prime Tower, 300, 200]
+
++
+However, our printer is terrible. It only supports 1 filament. Filling the surfaces has no effect on the actual color printed. Therefore, we need to <<_adding_pauses, add a pause>> during the print and change the filament during the pause.
+
+CAUTION: <<_slicing, Slice>> the place first before adding a pause.
+
+NOTE: filling the color makes it easier to identify parts.
+
+=== Slicing
 
 . If your model has hanging parts, you need to enable support first. On the sidebar, click *Support* > *Enable Support*.
 
 +
-.The location of the button of the “Support” tab.
+.The location of the button of the "Support" tab.
 image::enable_support.png[Enable Support, 200, 300]
 
 +
@@ -116,13 +166,72 @@ image::enable_support.png[Enable Support, 200, 300]
 A person forgot to use support for a model with hanging parts. As a result, the hanging part could not print properly.
 
 image::tc_no_support.jpeg[Consequences of Forgoting to Use Support, 300, 200]
+
+Thefore, make sure to enable support when the model have hanging parts.
 ====
 
-. Click *Slice Plate*, then *Send Print*. These buttons are at the bottom right of the canvas.
+. Click *Slice Plate* (at the bottom right of the canvas).
 
 +
 CAUTION: You must slice it first before printing.
 
 +
-.Slice Plate” and “Send Print” buttons.
+."Slice Plate" and "Send Print" buttons.
 image::slice_print_btn.png[Slice Plate and Send Print buttons, 300, 200]
+
+=== Adding Pauses
+
+. On the *layer slider*, right click on the layer that you want a pause for.
+
+. Click *Add Pause*.
+
++
+TIP: On Mac, right-clicking on tracepad is clicking with 2 fingers. However, it may trigger scrolling, which changes the layer. You can change the settings so that right-clicking is clicking at the bottom-right corner.
+
++
+NOTE: The pause comes after the layer has finished.
+
++
+.The Layer Slider
+image::layer_slider.png[Layer Slier, 300, 200]
+
+=== Connection and Printing
+
+. If you have not connected to the printer:
+
+.. Click *Device* on the top toolbar.
+.. Click *Scan Add*.
+
++
+."Device" and "Scan Add" buttons
+image::connect_printer.png[Device Tab, 300, 200]
+
+.. It will show all the printers. *Tick* the boxes to add them.
+.. Click *Add*.
+
+
++
+[TIP]
+====
+If none is found:
+
+- go to 211 and check if the printers are on
+- check if your computer is connected to css_Internal
+====
+
+.. Go back to the *Preview* tab by pressing it on the top of the screen.
+. Press *Print Plate*.
+. Select the printer.
+. Press *Print*.
+
++
+NOTE: Alternatively, you may send the file to the printer and start the printing directly on the printer itself. You can only send when the printer is printing.
+
++
+.The printing screen.
+image::send_print.png[Printing Screen, 300, 200]
+
++
+CAUTION: Make sure that the printer selected in this step is the same as the printer when you select the nozzle. Otherwise, the printer may not print correctly or throw errors.
+
+WARNING: A person sent the model which had its printer set to a larger one to a smaller one. As the model was compiled with coordinates for larger sizes, the nozzle went out of range in the smaller printer, resulting in a failed printing job.
