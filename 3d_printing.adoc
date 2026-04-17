@@ -4,6 +4,7 @@ Hayden; Jeff
 :toc:
 
 :imagesdir: images/3d_printing/s1
+[#using-fusion]
 == Using Fusion
 
 === Placeholder 1
@@ -17,8 +18,10 @@ Hayden; Jeff
 === Placeholder 5
 
 :imagesdir: images/3d_printing/s2
+[#printing-software]
 == Printing Software
 
+[#exporting]
 === Exporting
 
 After finishing drawing the 3D model, you will need to export it as a file. Use `.stl` as the format.
@@ -26,6 +29,7 @@ After finishing drawing the 3D model, you will need to export it as a file. Use 
 .Export screen in Fusion. Make sure to select .stl for exporting.
 image::fusion_export.png[Fusion Export Screen, 300, 200]
 
+[#importing-to-creality-software]
 === Importing to Creality Software
 
 . https://www.creality.com/download#sparkx[Download the software] if you have not.
@@ -84,6 +88,7 @@ image::obj_correct.png[Correctly Placed Object, 200, 300]
 +
 NOTE: Sometimes, if the model is too large, it will never fit on the plate, and you need to redesign it.
 
+[#nozzle-and-printer-selection]
 === Nozzle and Printer Selection
 
 You can change the nozzle size and printer in the top left corner.
@@ -114,6 +119,7 @@ image::printer_nozzle_add.png[Printer List, 300, 200]
 
 . Select the printer and nozzle size that you want to use from the list.
 
+[#multicolor-and-filament-selection]
 === Multicolor and Filament Selection
 
 You can change or add filament type using the *Filament* window on the top right corner.
@@ -147,12 +153,13 @@ image::paint_popup.png[Color Painting UI, 200, 300]
 image::prime_tower.png[Prime Tower, 300, 200]
 
 +
-However, our printer is terrible. It only supports 1 filament. Filling the surfaces has no effect on the actual color printed. Therefore, we need to <<_adding_pauses, add a pause>> during the print and change the filament during the pause.
+However, our printer is terrible. It only supports 1 filament. Filling the surfaces has no effect on the actual color printed. Therefore, we need to <<adding-pauses, add a pause>> during the print and change the filament during the pause.
 
-CAUTION: <<_slicing, Slice>> the place first before adding a pause.
+CAUTION: <<slicing, Slice>> the place first before adding a pause.
 
 NOTE: filling the color makes it easier to identify parts.
 
+[#slicing]
 === Slicing
 
 . If your model has hanging parts, you need to enable support first. On the sidebar, click *Support* > *Enable Support*.
@@ -180,6 +187,7 @@ CAUTION: You must slice it first before printing.
 ."Slice Plate" and "Send Print" buttons.
 image::slice_print_btn.png[Slice Plate and Send Print buttons, 300, 200]
 
+[#adding-pauses]
 === Adding Pauses
 
 . On the *layer slider*, right click on the layer that you want a pause for.
@@ -196,6 +204,7 @@ NOTE: The pause comes after the layer has finished.
 .The Layer Slider
 image::layer_slider.png[Layer Slier, 300, 200]
 
+[#connection-and-printing]
 === Connection and Printing
 
 . If you have not connected to the printer:
