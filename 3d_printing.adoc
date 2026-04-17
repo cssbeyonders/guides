@@ -279,6 +279,16 @@ image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 300, 200]
 
 . There should be a pop-up on the screen. Click *Refill*.
 . Follow <<changing-filament, the steps to change filament>>, *including the extrude test.*
+
++
+[TIP]
+====
+Use the scrapers to separate the nozzle with the partially printed model to prevent the extruding filament from touching it.
+
+.Scrapers.
+image::scrapers.jpeg[Scrapers, 200, 300]
+====
+
 . On the screen, *resume printing*.
 
 [#could-not-print-out-filament]
@@ -331,7 +341,7 @@ There are many reasons this could happen.
 === Printer Printed a Mess
 
 [disc]
-- <<importing-to-creality-software--rotate, Did you orient your model properly?>>
+- <<importing-to-creality-software, Did you orient your model properly?>>
 - <<slicing, Did you enable support for hanging parts?>>
 - The printer may not have consistent filament supply. See <<could-not-print-out-filament, this section>> to fix filament supply.
 
