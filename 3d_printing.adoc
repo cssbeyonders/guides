@@ -18,8 +18,8 @@ Hayden; Jeff
 === Placeholder 5
 
 :imagesdir: images/3d_printing/s2
-[#printing-software]
-== Printing Software
+[#creality-software]
+== Creality Software
 
 [#exporting]
 === Exporting
@@ -34,6 +34,7 @@ image::fusion_export.png[Fusion Export Screen, 300, 200]
 
 . https://www.creality.com/download#sparkx[Download the software] if you have not.
 
++
 NOTE: The instruction is based on the version of the Creality software as of 1 April, 2026.
 
 . Import the `.stl` file into the Creality app by pressing the *Add* button.
@@ -71,19 +72,19 @@ image::rotate_auto_rot.png[Rotate and Auto Orient Buttons, 400, 100]
 .The interface of the "Rotate" function
 image::rot_ui.png[UI of Rotate, 400, 100]
 
++
+[TIP]
+Due to how models are printed, horizontal strength is stronger than vertical strength. That means the top and bottom parts are more likely to break off than left and right parts. Consider rotating your model if some parts need strength.
+
 . Fix the *location* by *dragging* the model back onto the plate.
 
 +
-[.float-group]
---
-[.left]
 .An out-of-bound object.
 image::obj_out_of_bounds.png[Object Out of Bounds, 200, 300]
 
-[.left]
++
 .A properly placed object.
 image::obj_correct.png[Correctly Placed Object, 200, 300]
---
 
 +
 NOTE: Sometimes, if the model is too large, it will never fit on the plate, and you need to redesign it.
@@ -110,8 +111,10 @@ image::printer_nozzle.png[Printer and Nozzle Selection, 300, 200]
 .The printer list.
 image::printer_nozzle_add.png[Printer List, 300, 200]
 
++
 [TIP]
 ====
+[disc]
 - You can also view the size limit of the printers in the  printer list.
 - After selecting a printer and nozzle, the plate will change according to the printer model.
 - You might want to reposition your model when the plate changes.
@@ -124,10 +127,10 @@ image::printer_nozzle_add.png[Printer List, 300, 200]
 
 You can change or add filament type using the *Filament* window on the top right corner.
 
-CAUTION: You cannot set up filament type, multicolor, or printing temperature on the printer; you must set it up in the software.
+CAUTION: You cannot set up filament type, multicolor, or printing temperature on the printer; *you must set it up in the software.*
 
 .The filament window.
-image::multifilament.png[Filament Window, 300, 200]
+image::multifilament.png[Filament Window, 600, 400]
 
 . Add a new filament by pressing *+*.
 . Modify the filament's type by pressing the *down arrow* next to the type.
@@ -157,7 +160,7 @@ However, our printer is terrible. It only supports 1 filament. Filling the surfa
 
 CAUTION: <<slicing, Slice>> the place first before adding a pause.
 
-NOTE: filling the color makes it easier to identify parts.
+NOTE: Filling the color makes it easier to identify parts.
 
 [#slicing]
 === Slicing
@@ -174,8 +177,6 @@ image::enable_support.png[Enable Support, 200, 300]
 A person forgot to use support for a model with hanging parts. As a result, the hanging part could not print properly.
 
 image::tc_no_support.jpeg[Consequences of Forgoting to Use Support, 300, 200]
-
-Thefore, make sure to enable support when the model have hanging parts.
 ====
 
 . Click *Slice Plate* (at the bottom right of the canvas).
@@ -202,7 +203,7 @@ NOTE: The pause comes after the layer has finished.
 
 +
 .The Layer Slider
-image::layer_slider.png[Layer Slier, 300, 200]
+image::layer_slider.png[Layer Slier, 600, 400]
 
 [#connection-and-printing]
 === Connection and Printing
@@ -214,7 +215,7 @@ image::layer_slider.png[Layer Slier, 300, 200]
 
 +
 ."Device" and "Scan Add" buttons
-image::connect_printer.png[Device Tab, 300, 200]
+image::connect_printer.png[Device Tab, 600, 400]
 
 .. It will show all the printers. *Tick* the boxes to add them.
 .. Click *Add*.
@@ -224,7 +225,7 @@ image::connect_printer.png[Device Tab, 300, 200]
 [TIP]
 ====
 If none is found:
-
+[disc]
 - go to 211 and check if the printers are on
 - check if your computer is connected to css_Internal
 ====
@@ -239,9 +240,29 @@ NOTE: Alternatively, you may send the file to the printer and start the printing
 
 +
 .The printing screen.
-image::send_print.png[Printing Screen, 300, 200]
+image::send_print.png[Printing Screen, 600, 400]
 
 +
 CAUTION: Make sure that the printer selected in this step is the same as the printer when you select the nozzle. Otherwise, the printer may not print correctly or throw errors.
 
-WARNING: A person sent the model which had its printer set to a larger one to a smaller one. As the model was compiled with coordinates for larger sizes, the nozzle went out of range in the smaller printer, resulting in a failed printing job.
+[WARNING]
+====
+A person sent the model which had its printer set to a larger one to a smaller one. As the model was compiled with coordinates for larger sizes, the nozzle went out of range in the smaller printer, resulting in a failed printing job.
+
+image::print_cutoff[Failed Printing due to Out of Range Axis, 300, 200]
+====
+
+=== Remote Control and Recording
+
+== Operating the Printer
+=== Filament Types
+=== Changing Filament
+=== Starting a Print
+=== Taking Out the Product
+
+== Troubleshooting
+=== Filament Ran Out
+=== Could not Print Out Filament
+=== Printer Printed a Mess
+=== Axis Out of Range
+=== Printing in the Air
