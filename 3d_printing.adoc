@@ -26,10 +26,11 @@ After finishing drawing the 3D model, you will need to export it as a file. Use 
 .Export screen in Fusion. Make sure to select .stl for exporting.
 image::fusion_export.png[Fusion Export Screen, 300, 200]
 
-
 === Importing to Creality Software
 
 . https://www.creality.com/download#sparkx[Download the software] if you have not.
+
+NOTE: The instruction is based on the version of the Creality software as of 1 April, 2026.
 
 . Import the `.stl` file into the Creality app by pressing the *Add* button.
 
