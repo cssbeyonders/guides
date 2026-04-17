@@ -220,7 +220,6 @@ image::connect_printer.png[Device Tab, 600, 400]
 .. It will show all the printers. *Tick* the boxes to add them.
 .. Click *Add*.
 
-
 +
 [TIP]
 ====
@@ -270,9 +269,32 @@ image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 300, 200]
 [#taking-out-the-product]
 === Taking Out the Product
 
+. If the printer has just finished printing, on the screen, go to *Control* > *Cooling*, then turn all the fans to the highest.
+
++
+CAUTION: *Do not touch* anything right after it has finished printing. It is very hot.
+
+. Detach the plate from the magnetic board using the grabbers.
+
++
+.Grabbers on the Plate
+image::plate_grabbers.jpg[Plate Grabbers, 300, 200]
+
+. Bend the plate. The product will detach from the plate and you can remove it easily.
+
+. To attach the plate back to the magnetic board, place the plate on it and push it in. At the bottom, *match the notches on the plate with the extrusions on the magnetic board.*
+
++
+.Notches and Extrusions
+image::notch_extrusion.png[Notches and Extrusions, 300, 200]
+
+
+
 :imagesdir: images/3d_printing/s4
 [#troubleshooting]
 == Troubleshooting
+
+CAUTION: Never touch the metal part of the nozzle. It is very hot.
 
 [#filament-ran-out]
 === Filament Ran Out
@@ -327,7 +349,7 @@ There are many reasons this could happen.
 . Take note of the extruded filament. If there are filament of other colors, repeat extruding until it is fully gone.
 |This is because filaments like ABS require a higher temperature to melt. When we extrude using a higher temperature, it can melt the stuck filament.
 
-|The filament tied in the filament wheel.
+|The filament tied in the filament roll.
 |Untie/cut the filament.
 |
 
@@ -359,3 +381,19 @@ image::axis_out_of_range.jpeg[Axis Out of Range, 300, 200]
 === Printing in the Air
 
 Filament supply was interrupted during the print. See <<could-not-print-out-filament, this section>> to fix filament supply.
+
+:sectnums!:
+== Glossary
+Extrusion::
+. [In Fusion] The action of turning a 2D sketch into a 3D object by linear action.
+. [In 3D Printer, Action] The action of ejecting filament from the nozzle.
+. [In 3D Printer, Physical Object] The metal part at the back of the magnetic board for fixing the location of the plate.
+Filament:: The material for 3D printing. It comes in rolls.
+Grabber:: One of the two spots on the plate for you to grab and remove the plate.
+Magnetic board:: An object in a 3D printer where the plate is fixed on.
+Notch:: The indented part at the back of the plate where the extrusion is fitted.
+Nozzle:: The apparatus in a 3D printer which intakes filament, heats it up, and extrudes it.
+Plate:: The board in a 3D printer where 3D printing is done on.
+Rack:: The place where filament rolls are stored.
+Screen:: The display on the 3D printer.
+Support:: Extra printed filament for avoid hanging parts being printed in the air.
