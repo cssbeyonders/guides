@@ -27,7 +27,7 @@ Hayden; Jeff
 After finishing drawing the 3D model, you will need to export it as a file. Use `.stl` as the format.
 
 .Export screen in Fusion. Make sure to select .stl for exporting.
-image::fusion_export.png[Fusion Export Screen, 300, 200]
+image::fusion_export.png[Fusion Export Screen, 600, 400]
 
 [#importing-to-creality-software]
 === Importing to Creality Software
@@ -41,21 +41,21 @@ NOTE: The instruction is based on the version of the Creality software as of 1 A
 
 +
 .The "Add" button
-image::import_btn.png[Add Button, 300, 200]
+image::import_btn.png[Add Button, 600, 400]
 
 +
 The model is imported onto the plate, but the orientation may not be correct.
 
 +
 .An example of a poor rotation. This would use an excessive amount of support.
-image::poor_orientation.png[Poor Orientation Example, 300, 200]
+image::poor_orientation.png[Poor Orientation Example, 600, 400]
 
 +
 [WARNING]
 ====
 A person tried printing out a object without using a proper orientation. The model was placed in a diagonal orientation pointing upward. As a result, the angle make the filament couldn't stick properly to the previous layer and printed in air.
 
-image::tc_poor_orient.jpeg[Poor Orientation Example, 300, 200]
+image::tc_poor_orient.jpeg[Poor Orientation Example, 600, 400]
 ====
 
 . Fix the *rotation* using the *Rotate* feature. It will bring up a pop-up where you can modify the angles by the axis shown by the colored lines.
@@ -80,11 +80,11 @@ Due to how models are printed, horizontal strength is stronger than vertical str
 
 +
 .An out-of-bound object.
-image::obj_out_of_bounds.png[Object Out of Bounds, 200, 300]
+image::obj_out_of_bounds.png[Object Out of Bounds, 400, 600]
 
 +
 .A properly placed object.
-image::obj_correct.png[Correctly Placed Object, 200, 300]
+image::obj_correct.png[Correctly Placed Object, 400, 600]
 
 +
 NOTE: Sometimes, if the model is too large, it will never fit on the plate, and you need to redesign it.
@@ -99,7 +99,7 @@ NOTE: The nozzle size is the diameter of the extruded filament. A smaller number
 TIP: It is found out that a smaller nozzle size can also reduce the weight due to reduced wall thickness. Therefore, 0.4 nozzle is better for most situations.
 
 .Selecting printer and nozzle size.
-image::printer_nozzle.png[Printer and Nozzle Selection, 300, 200]
+image::printer_nozzle.png[Printer and Nozzle Selection, 600, 400]
 
 . If the list does not have the nozzle and printer you want:
 .. Click the *Select/Remove printers*.
@@ -109,7 +109,7 @@ image::printer_nozzle.png[Printer and Nozzle Selection, 300, 200]
 
 +
 .The printer list.
-image::printer_nozzle_add.png[Printer List, 300, 200]
+image::printer_nozzle_add.png[Printer List, 600, 400]
 
 +
 [TIP]
@@ -130,7 +130,7 @@ You can change or add filament type using the *Filament* window on the top right
 IMPORTANT: You cannot set up filament type, multicolor, or printing temperature on the printer; *you must set it up in the software.*
 
 .The filament window.
-image::multifilament.png[Filament Window, 600, 400]
+image::multifilament.png[Filament Window, 900, 600]
 
 . Add a new filament by pressing *+*.
 . Modify the filament's type by pressing the *down arrow* next to the type.
@@ -147,13 +147,13 @@ image::fill_tool.png[Color Painting Tool, 400, 100]
 
 +
 .The UI of the "Color Painting" tool.
-image::paint_popup.png[Color Painting UI, 200, 300]
+image::paint_popup.png[Color Painting UI, 400, 600]
 
 . After filling multiple colors, a prime tower is needed. Make sure your model does not collide with the prime tower.
 
 +
 .Prime Tower.
-image::prime_tower.png[Prime Tower, 300, 200]
+image::prime_tower.png[Prime Tower, 600, 400]
 
 +
 However, our printer only supports 1 filament at the same time. Filling the surfaces has no effect on the actual color printed. Therefore, we need to <<adding-pauses, add a pause>> during the print and change the filament during the pause.
@@ -169,14 +169,14 @@ NOTE: Filling the color makes it easier to identify parts.
 
 +
 .The location of the button of the "Support" tab.
-image::enable_support.png[Enable Support, 200, 300]
+image::enable_support.png[Enable Support, 400, 600]
 
 +
 [WARNING]
 ====
 A person forgot to use support for a model with hanging parts. As a result, the hanging part could not print properly.
 
-image::tc_no_support.jpeg[Consequences of Forgoting to Use Support, 300, 200]
+image::tc_no_support.jpeg[Consequences of Forgoting to Use Support, 600, 400]
 ====
 
 . Click *Slice Plate* (at the bottom right of the canvas).
@@ -186,7 +186,7 @@ IMPORTANT: You must slice it first before printing.
 
 +
 ."Slice Plate" and "Send Print" buttons.
-image::slice_print_btn.png[Slice Plate and Send Print buttons, 300, 200]
+image::slice_print_btn.png[Slice Plate and Send Print buttons, 600, 400]
 
 [#adding-pauses]
 === Adding Pauses
@@ -203,7 +203,7 @@ NOTE: The pause comes after the layer has finished.
 
 +
 .The Layer Slider
-image::layer_slider.png[Layer Slier, 600, 400]
+image::layer_slider.png[Layer Slier, 900, 600]
 
 [#connection-and-printing]
 === Connection and Printing
@@ -215,7 +215,7 @@ image::layer_slider.png[Layer Slier, 600, 400]
 
 +
 ."Device" and "Scan Add" buttons
-image::connect_printer.png[Device Tab, 600, 400]
+image::connect_printer.png[Device Tab, 900, 600]
 
 .. It will show all the printers. *Tick* the boxes to add them.
 .. Click *Add*.
@@ -239,7 +239,7 @@ NOTE: Alternatively, you may send the file to the printer and start the printing
 
 +
 .The printing screen.
-image::send_print.png[Printing Screen, 600, 400]
+image::send_print.png[Printing Screen, 900, 600]
 
 +
 IMPORTANT: Make sure that the printer selected in this step is the same as the printer when you select the nozzle. Otherwise, the printer may not print correctly or throw errors.
@@ -248,7 +248,7 @@ IMPORTANT: Make sure that the printer selected in this step is the same as the p
 ====
 A person sent the model which had its printer set to a larger one to a smaller one. As the model was compiled with coordinates for larger sizes, the nozzle went out of range in the smaller printer, resulting in a failed printing job.
 
-image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 300, 200]
+image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 600, 400]
 ====
 
 === Remote Control and Recording
@@ -261,6 +261,41 @@ image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 300, 200]
 === Filament Types
 
 There are a few types of filaments. The most common ones are *PLA* and *ABS*. They are used for different purposes.
+
+.PLA and ABS Comparison
+|===
+|Feature |PLA |ABS
+
+|Printing Temperature
+|Lower
+|Higher
+
+|Printing Requirements and Warping
+|Few. Less prone to warping.
+|More. Requires heated bed and enclosure to prevent warping.
+
+|Strength
+|Moderate
+|High
+
+|Toxicity and Odor
+|Low odor and non-toxic.
+|Strong plastic odors and produce toxic fumes. Requires good ventilation.
+
+|Smoothening
+|-
+|With acetone
+
+|Suitable for...
+|Prototypes, parts with low stress requirements
+|Parts requiring high strength, mechanical parts
+
+|===
+
+You can identify the type and color of a filament roll by reading its label.
+
+.Label on filament. As we can see, it is PLA and is of color Natural.
+image::filament_type_label.png[Label on Filament Roll, 400, 600]
 
 [#changing-filament]
 === Changing Filament
@@ -309,7 +344,7 @@ IMPORTANT: Locking the lock is very important. Otherwise, the nozzle will not be
 
 +
 .Locations to Check for Cleaning the Plate.
-image::plate_cleaning.png[Plate Cleaning Locations, 300, 200]
+image::plate_cleaning.png[Plate Cleaning Locations, 600, 400]
 
 . Go to *Control* > *Extrude/Retract* > *Extrude* and test if the filament can extrude well. If not, <<could-not-print-out-filament, fix the problem with these steps>>.
 
@@ -330,7 +365,7 @@ CAUTION: *Do not touch* anything right after it has finished printing. It is ver
 
 +
 .Grabbers on the Plate
-image::plate_grabbers.jpg[Plate Grabbers, 300, 200]
+image::plate_grabbers.jpg[Plate Grabbers, 600, 400]
 
 . Bend the plate. The product will detach from the plate and you can remove it easily.
 
@@ -338,7 +373,7 @@ image::plate_grabbers.jpg[Plate Grabbers, 300, 200]
 
 +
 .Notches and Extrusions
-image::notch_extrusion.png[Notches and Extrusions, 300, 200]
+image::notch_extrusion.png[Notches and Extrusions, 600, 400]
 
 
 
@@ -360,7 +395,7 @@ CAUTION: Never touch the metal part of the nozzle. It is very hot.
 Use the scrapers to separate the nozzle with the partially printed model to prevent the extruding filament from touching it.
 
 .Scrapers.
-image::scrapers.jpeg[Scrapers, 200, 300]
+image::scrapers.jpeg[Scrapers, 400, 600]
 ====
 
 . On the screen, *resume printing*.
@@ -429,10 +464,10 @@ There are many reasons this could happen.
 === Axis Out of Range
 
 .Axis Out of Range Error.
-image::axis_out_of_range.jpeg[Axis Out of Range, 300, 200]
+image::axis_out_of_range.jpeg[Axis Out of Range, 600, 400]
 
 [disc]
-- <<importing-to-creality-software--rotate, Did you place your model within the boundary of the plate?>> This includes vertical limit.
+- <<importing-to-creality-software, Did you place your model within the boundary of the plate?>> This includes vertical limit.
 - <<nozzle-and-printer-selection, Did you select the matching printer?>>
 - <<connection-and-printing, Did you select the matching printer for your selected nozzle?>>
 
