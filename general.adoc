@@ -1,9 +1,9 @@
 = General Guide
-Hayden
+Jasper; Hayden
 :sectnums:
 :toc:
 
-:imagesdir: images/general/s1
+:imagesdir: images/general/common-components-and-names
 == Common Components and Names
 
 === Tetrix
@@ -14,15 +14,38 @@ Hayden
 
 === Tools
 
-:imagesdir: images/general/s2
+:imagesdir: images/general/skills
+[#skills]
 == Skills
 
+[#problem-solving-skills]
 === Problem Solving Skills
 - 70-90% of computer problems can be solved by switching it off then on again.
-- If you encounter any problems, the Internet is a better helper than the elder teammates.
+- If you encounter any problems:
+. Search the Internet.
+. Ask for help from more experienced members.
 
+NOTE: Sometimes, some experienced members may not always be able to help you. You can find some other members/alumni.
+
+[#using-screws]
 === Using Screws
 
+==== Nut and Bolt
+
+.Nut and Bolt
+image::nut_and_bolt.jpg[Nut and Bolt, 300, 200]
+
+.Head and Thread of Bolt
+image::head_and_thread.png[Bolt, 200, 300]
+
+==== Tightening and Loosening
+
+- Turn *clockwise* to tighten.
+- Turn *anticlockwise* to loosen.
+- Use screwdrivers.
+- Hold down the nut while tightening/loosening.
+
+[#using-mac]
 === Using Mac
 
 - The command (`Cmd`) key is like the control key on Windows.
@@ -33,8 +56,8 @@ Hayden
 |===
 |Windows |Mac
 
-|`Ctrl + C` |`Cmd + C`
-|`Ctrl + V` |`Cmd + V`
+|`Ctrl` + `C` |`Cmd` + `C`
+|`Ctrl` + `V` |`Cmd` + `V`
 |===
 
 +
@@ -43,19 +66,40 @@ There is also the control key, but its use is different from that on Windows.
 
 - Change keyboard using the globe key.
 
+- `Control` + `Click` to right click.
+
+[#using-driver-station]
 === Using Driver Station
 
-:imagesdir: images/general/s3
+==== Battery
+
+WARNING: The battery may be loose. Avoid touching unless needed.
+
+TIP: If it is loosened, push the battery in.
+
+==== Power Button
+
+==== Connecting to Robot
+
+==== Robot Configuration
+
+==== Selecting a Program
+
+:imagesdir: images/general/motor-and-movement
+[#motor-and-movement]
 == Motor and Movement
 
+[#mounting-motors-and-componenets]
 === Mounting Motors and Components
 
 Motors are mounted using *Motor Mounts*. There are different types of motor mounts for different types of motors.
 
+[#using-servos]
 === Using Servos
 
 Servos are also mounted using *Servo Mounts*.
 
+[#mecanum-wheel]
 === Mecanum Wheel
 
 Mecanum wheels should be mounted according to the figure below.
@@ -66,29 +110,14 @@ image::mecanum_installation.jpeg[Mecanum Wheel Mounting Method, 400, 400]
 [TIP]
 You can easily remember its orientation by remembering the "X", the green and blue lines. The "slants" on the wheel align to it.
 
+[#slider]
 === Slider
 
-:imagesdir: images/general/s4
+:imagesdir: images/general/wiring
+[#wiring]
 == Wiring
 
-=== Naming Conventions
-
-During a period of time, a kind of systematic naming convension was created. It follows the format `[end 1 color] 接 [end 2 color] [wire color]`.
-
-However, there are also trivial names for them. The following table lists the wire names.
-
-.Wire Names
-[%autowidth]
-[cols="1,1,1,a"]
-|===
-|Trivial Name (English) |Trivial Name (Chinese) |Systematic Name |Image
-
-|Battery Wire |電池線 |黃接白黑紅 |image::mecanum_installation.jpeg[Mecanum Wheel Mounting Method, 400, 400]
-|Servo Wire |Servo線 |白接白黑紅白/黑紅黃 |
-|Signal Wire |信號線 | |
-|Motor Wire |摩打線 | |
-|===
-
+[#connecting-to-battery]
 === Connecting to Battery
 
 Connect the battery to the *Control Hub* using the *Battery Wire*.
@@ -98,3 +127,14 @@ Connect the battery to the *Control Hub* using the *Battery Wire*.
 === Connecting to Motors
 
 === Connecting to Servos
+
+=== Troubleshooting
+
+==== Loose Wire
+
+- Use electrical tape to fix the wire.
+
+.Electrical Tape
+image::electrical_tape.jpg[Electrical Tape, 300, 200]
+
+
