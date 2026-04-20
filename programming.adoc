@@ -1,2 +1,11 @@
 = Programming guide
-Jasper
+
+Everything needed: +
+https://gm0.org/en/latest/docs/software/index.html
+
+*Better use Android Studio
+
+Basic Java Syntax if needed: +
+https://www.w3schools.com/java/
+
+NOTE: You can create classes for every part of the robot and create objects in a Robot class, then create the Robot object in the TeleOp program. You can also create a template class for TeleOp, then create many TeleOp class with the template
