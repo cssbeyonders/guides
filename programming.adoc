@@ -11,3 +11,5 @@ https://www.w3schools.com/java/
 NOTE: You can create classes for every part of the robot and create objects in a Robot class, then create the Robot object in the TeleOp program. You can also create a template class for TeleOp, then create many TeleOp class with the template.
 
 NOTE: You do not need to understand the concept behind. You only need to know how to use the program.
+
+NOTE: If you encounter any problem, search online. There are many solutions online. Also, do not write everything yourself. There are many libraries online.
