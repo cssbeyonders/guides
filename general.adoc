@@ -16,7 +16,7 @@ Jasper; Hayden
 
 :imagesdir: images/general/skills
 [#skills]
-== Skills
+== General Skills
 
 [#problem-solving-skills]
 === Problem Solving Skills
@@ -138,3 +138,8 @@ Connect the battery to the *Control Hub* using the *Battery Wire*.
 image::electrical_tape.jpg[Electrical Tape, 300, 200]
 
 
+== Machining
+
+=== Drilling
+
+=== Sawing
