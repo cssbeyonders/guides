@@ -6,6 +6,7 @@ Read all the guides of Beyonders here.
 - xref:programming.adoc[Programming]
 - xref:3d_printing.adoc[3D Printing]
 
-useful resources:
-https://ftc-docs.firstinspires.org/en/latest/[FTC DOCS]
-https://gm0.org/en/latest/[Game Manual 0]
+useful resources: 
+
+- https://ftc-docs.firstinspires.org/en/latest/[FTC DOCS]
+- https://gm0.org/en/latest/[Game Manual 0]
