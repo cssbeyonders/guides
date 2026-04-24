@@ -429,7 +429,7 @@ There are many reasons this could happen.
 |
 [disc]
 - If the filament is easy to break, and there are tight turns in the tube, it is easy for this to happen.
-- Filament that are not stored in proper environment is easier to break.
+- Filaments that are not stored in proper environment are easier to break.
 
 |There are filaments of other types stuck in the nozzle.
 |
