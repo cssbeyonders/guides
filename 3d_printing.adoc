@@ -3,7 +3,7 @@ Hayden; Jeff
 :sectnums:
 :toc:
 
-:imagesdir: images/3d_printing/s1
+:imagesdir: images/3d_printing/using-fusion
 [#using-fusion]
 == Using Fusion
 
@@ -17,7 +17,7 @@ Hayden; Jeff
 
 === Placeholder 5
 
-:imagesdir: images/3d_printing/s2
+:imagesdir: images/3d_printing/creality-software
 [#creality-software]
 == Creality Software
 
@@ -253,7 +253,7 @@ image::tc_print_cutoff.jpeg[Failed Printing due to Out of Range Axis, 600, 400]
 
 === Remote Control and Recording
 
-:imagesdir: images/3d_printing/s3
+:imagesdir: images/3d_printing/operating-the-printer
 [#operating-the-printer]
 == Operating the Printer
 
@@ -377,7 +377,7 @@ image::notch_extrusion.png[Notches and Extrusions, 600, 400]
 
 
 
-:imagesdir: images/3d_printing/s4
+:imagesdir: images/3d_printing/troubleshooting
 [#troubleshooting]
 == Troubleshooting
 
