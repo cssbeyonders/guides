@@ -8,11 +8,53 @@ Jasper; Hayden
 
 === Tetrix
 
+.Tetrix sample.
+image::tetrix.jpeg[Tetrix, 300, 200]
+
+- Tetrix have big holes (diameter 8mm) surrounded by smaller holes (diameter 3.7mm).
+- The spacing between the centers is 8mm.
+
 === Matrix
+
+.Matrix sample.
+image::matrix.jpeg[Matrix, 300, 200]
+
+- Matrix have a grid of small holes (diameter 4mm).
+- The spacing between the centers are also 8mm.
 
 === GoBilda
 
+.GoBilda sample.
+image::gobilda.jpeg[GoBilda, 300, 200]
+
+- GoBilda also have small and big holes, but the beams are larger.
+- The big holes have a diameter of 14mm whole the small holes have a diameter of 8mm.
+- The spacing between the centers are also 8mm.
+
 === Tools
+
+==== Yellow Hex Driver (黃批) (size: 7/64")
+
+.Yellow Hex Driver (黃批).
+image::yellow_screwdriver.jpeg[Yellow Hex Driver, 200, 300]
+
+.Another variant.
+image::yellow_screwdriver_hard.jpeg[Yellow Hex Driver Variant, 200, 300]
+
+==== Pink Hex Socket Driver (粉紅批) (5.5mm)
+
+.Pink Hex Socket Driver (粉紅批).
+image::pink_screwdriver.jpeg[Pink Hex Socket Driver, 200, 300]
+
+==== All-in-one Hex Keys (萬能批)
+
+.Blue all-in-one hex keys (藍色萬能批).
+image::blue_all_keys.jpeg[Blue all-in-one Hex Keys, 200, 300]
+
+.Black all-in-one hex keys (黑色萬能批).
+image::black_all_keys.jpeg[Black all-in-one Hex Keys, 200, 300]
+
+==== Curved Hex Key
 
 :imagesdir: images/general/skills
 [#skills]
