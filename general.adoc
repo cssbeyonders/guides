@@ -108,7 +108,7 @@ There is also the control key, but its use is different from that on Windows.
 
 - Change keyboard using the globe key.
 
-- `Control` + `Click` to right click.
+- `Control` + `Click` or *click with 2 fingers* to right click.
 
 [#using-driver-station]
 === Using Driver Station
