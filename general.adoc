@@ -6,7 +6,9 @@ Jasper; Hayden
 :imagesdir: images/general/common-components-and-names
 == Common Components and Names
 
-=== Tetrix
+=== Building Materials
+
+==== Tetrix
 
 .Tetrix sample.
 image::tetrix.jpeg[Tetrix, 300, 200]
@@ -14,7 +16,7 @@ image::tetrix.jpeg[Tetrix, 300, 200]
 - Tetrix have big holes (diameter 8mm) surrounded by smaller holes (diameter 3.7mm).
 - The spacing between the centers is 8mm.
 
-=== Matrix
+==== Matrix
 
 .Matrix sample.
 image::matrix.jpeg[Matrix, 300, 200]
@@ -22,7 +24,7 @@ image::matrix.jpeg[Matrix, 300, 200]
 - Matrix have a grid of small holes (diameter 4mm).
 - The spacing between the centers are also 8mm.
 
-=== GoBilda
+==== GoBilda
 
 .GoBilda sample.
 image::gobilda.jpeg[GoBilda, 300, 200]
@@ -165,6 +167,7 @@ You can easily remember its orientation by remembering the "X", the green and bl
 Connect the battery to the *Control Hub* using the *Battery Wire*.
 
 === Connecting Control Hub and Expansion Hub
+
 
 === Connecting to Motors
 
