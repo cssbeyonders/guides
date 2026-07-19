@@ -172,6 +172,37 @@ NOTE: Filling the color makes it easier to identify parts.
 image::enable_support.png[Enable Support, 400, 600]
 
 +
+[TIP]
+====
+Different types of support have different advantages. The following table introduces their strengths and drawbacks.
+
+.Comparison of different types of support
+[cols="1,1,2,2"]
+|===
+|Type |Style |Advantages |Disadvantages
+
+|Normal
+|Grid (Default)
+|Stronger and more stable.
+|May use more filament for tall overhangs and can sometimes be hard to remove.
+
+|Normal
+|Snug
+|Uses less filament compared to grid.
+|Less stable.
+
+|Tree
+|Organic (Default)
+|Beautiful and easier to remove. Due to branch merging, it can save filament for tall supports.
+|Sometimes uses more filament, especially for short overhangs. Also, trees must start on the plate and therefore may not be possible in some situations.
+
+|Tree
+|
+
+|===
+====
+
++
 [WARNING]
 ====
 A person forgot to use support for a model with hanging parts. As a result, the hanging part could not print properly.
@@ -398,7 +429,9 @@ Use the scrapers to separate the nozzle with the partially printed model to prev
 image::scrapers.jpeg[Scrapers, 400, 600]
 ====
 
-. On the screen, *resume printing*.
+WARNING: Do not use your hand to separate them. The filament is very hot right after printing out, and it is easy for you to accidentally touch the nozzle which is even hotter.
+
+. On the screen, click *Home* > *Resume/Pause* > *Resume*.
 
 [#could-not-print-out-filament]
 === Could not Print Out Filament
@@ -412,8 +445,8 @@ There are many reasons this could happen.
 |===
 |Possible Causes |Solutions |Remarks
 
-|Lock is locked.
-|Unlock the lock.
+|Lock is unlocked.
+|Lock the lock.
 |
 
 |Filament not fully inserted.
