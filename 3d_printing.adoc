@@ -2,40 +2,149 @@
 Hayden; Jeff
 :sectnums:
 :toc:
+:toclevels: 4
 
 :imagesdir: images/3d_printing/using-fusion
 [#using-fusion]
-== Using Fusion
+== Using Fusion 360
 
-=== Placeholder 1
+Fusion 360 is a powerful application commonly used for 3D designing.
 
-=== Placeholder 2
+=== Set-up
 
-=== Placeholder 3
+==== License
+. If you do not have the license of Fusion 360 yet, ask Mr. Lui for it. (It is free for us.)
+. After receiving the activation email, follow the instructions to set up the account.
 
-=== Placeholder 4
+==== Log In
+. https://www.autodesk.com/hk[Visit the Autodesk Website].
+. Log in to the Autodesk account.
+. On the top right corner, click *your profile image* > *Products and services*.
+. Find *Fusion* > *Download* and follow the on-screen instructions to download and open it.
 
-=== Placeholder 5
++
+NOTE: The license of Fusion only allows for 1 device to be signed in. If you sign in using another device, the old one will automatically be signed out.
+
+==== Create New Design
+. On the home page of Fusion, click *New Design* > *Part Design* > *Create New*.
+
+=== Sketch
+[NOTE]
+====
+In Fusion, you need to understand the concept of creating a 3D object from 2D drawings called *Sketches*.
+
+For example, if you were to draw a starfruit in Fusion, you would first draw a sketch of a star. This is because it is the cross section of it. Later, you can turn it into a 3D shape using functions that we will discuss later.
+
+.Starfruit.
+image::starfruit.jpg[Starfruit, 600, 400]
+====
+
+NOTE: Fusion contains lots of features. This guide does not cover all of them. In fact, by hovering over features in Fusion, it shows a short description about it. You can learn more about these functions by reading the descriptions and trying them out.
+
+. To create a sketch, click *Create Sketch* from *Solid* > *Create*.
+. Next, select a *Plane*. It can be one of the 3 preset planes at the origin, or flat surfaces of other 3D bodies.
+
++
+NOTE: A plane is a 2D flat surface.
+
+. The perspective will now switch to the orientation of the plane. Now you can start sketching.
+
+==== Line
+
+A line can be created by selecting the 2 endpoints of the line.
+
+. Click *Line* under *Create*.
+. Select 2 points to create a line.
+. You can continue to select points to create multiple segments of lines.
+. Alternatively, click another point and drag without releasing the click to create an arc.
+
+[TIP]
+====
+Other methods to draw a line include:
+
+- Midpoint Line
+
+Other methods to draw a curve include:
+
+- 3-point Arc
+- Center Point Arc
+- Tangent Arc
+- Fit Point Spline
+- Control Point Spline
+- Conic Curve
+====
+
+==== Rectangle
+
+A rectangle can be created by selecting 2 points. The 2 points are the opposite corners of the rectangle.
+
+. Click *2-point Rectangle* under *Create*.
+. Select 2 points to create the rectangle.
+
+[TIP]
+====
+Other methods to draw a rectangle include:
+
+- 3-point Rectangle
+- Center Rectangle
+====
+
+==== Circle
+
+A circle can be created by selecting its center and specifying its diameter.
+
+. Click *Center Diameter Circle* under *Create*.
+. Select its center.
+. Enter its diameter, or alternatively select another point.
+
+[TIP]
+====
+Other methods to draw a circle include:
+
+- 2-point Circle
+- 3-point Circle
+- 2-tangent Circle
+- 3-tangent Circle
+====
+
+==== Parameters
+
+In large designs, if you want to change the size of certain things (e.g. hole size, board thickness), it is often difficult as many other things depend on previous items. However, Fusion offers a clean and efficient method for changing such values. Instead of entering the exact values when you create objects or perform actions, you can insert *Parameters* instead. Parameters are like variables in Fusion.
+
+. Click *Change Parameters* under *Modify*.
+. Click *+* on the top right corner.
+. Enter a name and its expression for the parameter.
+
++
+NOTE: An expression can be simply a value (e.g. 15) or depending on other parameters (e.g. length + 5).
+
+. Click *OK*.
 
 :imagesdir: images/3d_printing/creality-software
 [#creality-software]
 == Creality Software
 
-[#exporting]
-=== Exporting
+[#importing-to-creality-software]
+=== Importing to Creality Software
+
+[#exporting-from-fusion]
+==== Exporting from Fusion
 
 After finishing drawing the 3D model, you will need to export it as a file. Use `.stl` as the format.
 
 .Export screen in Fusion. Make sure to select .stl for exporting.
 image::fusion_export.png[Fusion Export Screen, 600, 400]
 
-[#importing-to-creality-software]
-=== Importing to Creality Software
+[#installation]
+==== Installation
 
 . https://www.creality.com/download#sparkx[Download the software] if you have not.
 
 +
 NOTE: The instruction is based on the version of the Creality software as of 1 April, 2026.
+
+[#importing]
+==== Importing
 
 . Import the `.stl` file into the Creality app by pressing the *Add* button.
 
@@ -198,7 +307,8 @@ Different types of support have different advantages. The following table introd
 
 |Tree
 |
-
+|
+|
 |===
 ====
 
@@ -239,6 +349,9 @@ image::layer_slider.png[Layer Slier, 900, 600]
 [#connection-and-printing]
 === Connection and Printing
 
+[#adding-printers]
+==== Adding Printers
+
 . If you have not connected to the printer:
 
 .. Click *Device* on the top toolbar.
@@ -261,6 +374,10 @@ If none is found:
 ====
 
 .. Go back to the *Preview* tab by pressing it on the top of the screen.
+
+[#sending-to-printer]
+==== Sending to Printer
+
 . Press *Print Plate*.
 . Select the printer.
 . Press *Print*.
@@ -408,14 +525,13 @@ image::notch_extrusion.png[Notches and Extrusions, 600, 400]
 
 
 
-:imagesdir: images/3d_printing/troubleshooting
 [#troubleshooting]
-== Troubleshooting
+=== Troubleshooting
 
 CAUTION: Never touch the metal part of the nozzle. It is very hot.
 
 [#filament-ran-out]
-=== Filament Ran Out
+==== Filament Ran Out
 
 . There should be a pop-up on the screen. Click *Refill*.
 . Follow <<changing-filament, the steps to change filament>>, *including the extrude test.*
@@ -434,7 +550,7 @@ WARNING: Do not use your hand to separate them. The filament is very hot right a
 . On the screen, click *Home* > *Resume/Pause* > *Resume*.
 
 [#could-not-print-out-filament]
-=== Could not Print Out Filament
+==== Could not Print Out Filament
 
 The primary reason is that the supply of filament was interrupted but the printer could not detect the running out/blocking of filament supply.
 
@@ -484,7 +600,7 @@ There are many reasons this could happen.
 |===
 
 [#printer-printed-a-mess]
-=== Printer Printed a Mess
+==== Printer Printed a Mess
 
 [disc]
 - <<importing-to-creality-software, Did you orient your model properly?>>
@@ -494,17 +610,17 @@ There are many reasons this could happen.
 - You accidentally moved the plate while replacing filament.
 
 [#axis-out-of-range]
-=== Axis Out of Range
+==== Axis Out of Range
 
 .Axis Out of Range Error.
 image::axis_out_of_range.jpeg[Axis Out of Range, 600, 400]
 
 [disc]
 - <<importing-to-creality-software, Did you place your model within the boundary of the plate?>> This includes vertical limit.
-- <<nozzle-and-printer-selection, Did you select the matching printer?>>
-- <<connection-and-printing, Did you select the matching printer for your selected nozzle?>>
+- <<nozzle-and-printer-selection, Did you select the correct printer?>>
+- <<sending-to-printer, Did you select the matching printer for your selected nozzle in the print dialog?>>
 
-=== Printing in the Air
+==== Printing in the Air
 
 Filament supply was interrupted during the print. See <<could-not-print-out-filament, this section>> to fix filament supply.
 

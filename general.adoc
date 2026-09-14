@@ -2,6 +2,7 @@
 Jasper; Hayden
 :sectnums:
 :toc:
+:toclevels: 4
 
 :imagesdir: images/general/common-components-and-names
 == Common Components and Names
