@@ -120,6 +120,73 @@ NOTE: An expression can be simply a value (e.g. 15) or depending on other parame
 
 . Click *OK*.
 
+Now, when you write values of lengths, angles, etc., you can enter the name of the parameter to represent the value.
+
+==== Sketch Dimensions and Constraints
+
+Shapes are not placed in a random ray. *Sketch Dimensions* and *Constraints* fixes them.
+
+To create a sketch dimension:
+. Click *Sketch Dimension* under *Create*.
+. Click a line to fix its length, a circle to fix its diameter, or two objets for their distances between.
+
+Under the *Constriants* section, there are many types of constraints:
+
+.Introduction of Various Constraints
+[cols='1,3']
+|===
+|Name |Action
+
+|Horizontal/Vertical
+|Forces a line to be completely horizontal or vertical.
+
+|Coincident
+|Put two points together, or put a point on a line.
+
+|Tangent
+|Put a line on a curve or a circle such that the line just touches the side of the curve or circle.
+
+|Equal
+|Make two lengths always equal. When one changes, the other changes too.
+
+|Parallel
+|Make two lines parallel to each other (run in the same direction).
+
+|Perpendicular
+|Make two lines perpendicular to each other (form a 90 degree angle with each other).
+
+|Fix/Unfix
+|When something is fixed, it position and size can never change.
+
+|Midpoint
+|Put a point on the midpoint of another line, or make two lines intersect at their midpoints.
+
+|Concentric
+|Make two circles, arcs or ellipses share the same center. Similar to putting their centers together.
+
+|Collinear
+|Make two line segments share a common line (that goes infinitely).
+
+|Symmetry
+|Select two objects that you want to have symmetry with, then select a mirroring line. The two objects will now mirror each
+other across the line.
+
+|Curvature
+|Select a spline and another line, spline or arc such that their curves continue smoothly.
+
+|Polygon
+|Ignore this.
+
+|===
+
+==== Completing a Sketch
+
+After drawing everything you need, click the green tick *Finish Sketch* button on the top right corner. Afterwards, it will return to 3D view and your sketch can be seen.
+
+=== From 2D to 3D
+
+Turning a sketch into a 3D object involves 3 main tools: *Extrude*, *Revolve* and 
+
 :imagesdir: images/3d_printing/creality-software
 [#creality-software]
 == Creality Software
