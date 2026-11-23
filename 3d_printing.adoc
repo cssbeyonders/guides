@@ -109,7 +109,7 @@ Other methods to draw a circle include:
 
 ==== Parameters
 
-In large designs, if you want to change the size of certain things (e.g. hole size, board thickness), it is often difficult as many other things depend on previous items. However, Fusion offers a clean and efficient method for changing such values. Instead of entering the exact values when you create objects or perform actions, you can insert *Parameters* instead. Parameters are like variables in Fusion.
+In large designs, if you want to change the size of certain things (e.g. hole size, board thickness), it is often difficult as many other things depend on previous items. However, Fusion offers a clean and efficient method for changing such values. Instead of entering the exact values when you create objects or perform actions, you can insert *Parameters* instead. Parameters in Fusion are like variables.
 
 . Click *Change Parameters* under *Modify*.
 . Click *+* on the top right corner.
