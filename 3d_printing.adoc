@@ -185,7 +185,32 @@ After drawing everything you need, click the green tick *Finish Sketch* button o
 
 === From 2D to 3D
 
-Turning a sketch into a 3D object involves 3 main tools: *Extrude*, *Revolve* and 
+Turning a sketch into a 3D object involves 3 main tools: *Extrude*, *Revolve* and *Sweep*.
+
+==== Extrude
+
+Extrude means to raise a face upward to form a solid (in the shape of a prism). For example, a triangle can be extruded to form a triangular prism.
+
+.A triangular face before extruding.
+image::triangle_face.png[Triangular Face, 600, 400]
+
+.A triangular prism after extruding.
+image::triangle_prism.png[Triangular Prism, 600, 400]
+
+. Click *Extrude* under *Create*.
+. Enter the extrude distance in the field shown.
+. Press enter.
+
+Alternatively, you can use the sidebar to modify the behaviour, though this guide will not explain all features shown. As always, you may xref:general.adoc#problem-solving-skills[search online for more information].
+
+Sometimes, you may need to select between the extruding modes on the sidebar to achieve you preferred behaviour:
+
+- *New Body*: The extruded content is saved as a completely new body (3D shape), separate from everything else.
+- *Join*: Combined to other bodies.
+- *Cut*: Volume of other bodies overlapping with the extruding volumn is removed.
+- *Interset*: Only volume of other bodies overlapping with the extruding volumn is kept. The remaining parts are removed.
+
+NOTE: For *Join*, sometimes it may not join to the desired body. In this case, use *New Body*, then combine them back using *Combine* under *Modify*.
 
 :imagesdir: images/3d_printing/creality-software
 [#creality-software]

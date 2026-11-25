@@ -67,10 +67,10 @@ image::black_all_keys.jpeg[Black all-in-one Hex Keys, 200, 300]
 === Problem Solving Skills
 - 70-90% of computer problems can be solved by switching it off then on again.
 - If you encounter any problems:
-. Search the Internet.
+. Search the Internet or ask AI.
 . Ask for help from more experienced members.
 
-NOTE: Sometimes, some experienced members may not always be able to help you. You can find some other members/alumni.
+NOTE: Sometimes, some experienced members may not always be able to help you. You can find some other members/alumni. If nobody knows, *search online or ask AI*.
 
 [#using-screws]
 === Using Screws
@@ -165,7 +165,7 @@ You can easily remember its orientation by remembering the "X", the green and bl
 [#connecting-to-battery]
 === Connecting to Battery
 
-Connect the battery to the *Control Hub* using the *Battery Wire*.
+Connect the battery to the *Control Hub* using the *Battery Wire* (white-to-yellow red-black wire).
 
 === Connecting Control Hub and Expansion Hub
 
